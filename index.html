@@ -1,0 +1,48 @@
+<!doctype>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>表格排序與篩選</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="pd-3">
+    <!-- <img src="https://www.stockfeel.com.tw/wp-content/themes/stockfeel_2016_theme/images/logo_main.svg?r=15333300" alt="logo"> -->
+  </h1>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      排序：
+      <select id="orderBy">
+        <option value="height">身高</option>
+        <option value="weight">體重</option>
+      </select>
+      <select id="order">
+        <option value="desc">高至低</option>
+        <option value="asc">低至高</option>
+      </select>
+      <input type="checkbox" id="handsome" />
+      只顯示帥氣的男人
+    </div>
+  </form>
+  <div class="contents">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>名子</th>
+          <th>身高</th>
+          <th>體重</th>
+          <th>帥不帥</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="json/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
